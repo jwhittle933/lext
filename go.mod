@@ -1,3 +1,3 @@
-module github.com/jwhittle3/lext
+module github.com/jwhittle933/lext
 
 go 1.15
