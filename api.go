@@ -42,10 +42,10 @@ type PrettyLogger struct {
 
 func New(out io.Writer) *PrettyLogger {
 	return &PrettyLogger{
-		info:    log.New(out, "\033[0;36m[INFO]\033m", log.Ldate|log.Ltime),
-		warning: log.New(out, "\033[0;33m[WARN]\033m", log.Ldate|log.Ltime),
-		error:   log.New(out, "\033[0;31m[ERROR]\033m", log.Ldate|log.Ltime),
-		server:  log.New(out, "\033[1;36m[SERVER]\033m", log.Ldate|log.Ltime),
+		info:    log.New(out, "\033[0;36m[INFO]\033[0m", log.Ldate|log.Ltime),
+		warning: log.New(out, "\033[0;33m[WARN]\033[0m", log.Ldate|log.Ltime),
+		error:   log.New(out, "\033[0;31m[ERROR]\033[0m", log.Ldate|log.Ltime),
+		server:  log.New(out, "\033[1;36m[SERVER]\033[0m", log.Ldate|log.Ltime),
 	}
 }
 
